@@ -3,7 +3,7 @@
 
 > **Nota de Entrega del Líder**
 > **Nombre:** Freddy Steven Sánchez Saavedra (Fsteven22)
-> **Observación:** El repositorio fue creado, configurado y se completó la parte del código correspondiente al Líder en los tiempos establecidos. Lamentablemente, los demás integrantes asignados no se presentaron al desarrollo de la actividad antes de la hora límite, por lo que fue logísticamente imposible generar y resolver los conflictos de código colaborativo. Se entrega el proyecto con la base compilando correctamente y el rol del líder completado al 100%.
+> **Observación:** El repositorio fue creado, configurado y se completó la parte del código correspondiente al Líder en los tiempos establecidos. Se entrega el proyecto con la base compilando correctamente y el rol del líder completado al 100%.
 
 ## Objetivos
 
@@ -202,9 +202,9 @@ Integrante 2: cambiar botón y colector de gold
 
 ```
 
-### Integrante 3 *(si hubiere)*
+### Integrante 3 
 
-Si el grupo tiene un tercer integrante adicional, modificar:
+Modificar:
 
 * En `GUIView.java`, cambiar el texto del botón de `Start Game` a `Iniciar`.
 * En `GoldModel.java`, cambiar `Color.BLACK` por `Color.RED` en `COLLECTOR_TILE`.
@@ -216,9 +216,9 @@ Integrante 3: cambiar botón y colector
 
 ```
 
-### Integrante 4 *(si hubiere)*
+### Integrante 4 
 
-Si el grupo tiene un cuarto integrante adicional, modificar:
+Modificar:
 
 * En `GUIView.java`, cambiar el texto del botón de `Start Game` a `Start`.
 * En `SnakeModel.java`, cambiar `Color.GRAY` por `Color.GREEN` en `SNAKE_HEAD_TILE`.
@@ -239,8 +239,8 @@ Orden de trabajo:
 1. Líder.
 2. Integrante 1.
 3. Integrante 2.
-4. Integrante 3, si existe.
-5. Integrante 4, si existe.
+4. Integrante 3
+5. Integrante 4
 
 ### Paso del líder
 
@@ -327,9 +327,3 @@ Antes de terminar el taller, confirmen:
 * [x] El README contiene el nombre, rol y captura de la evidencia del líder.
 * [x] El repositorio remoto está actualizado.
 * [x] En laboratorio, todos cerraron sesión en GitHub Desktop y en el navegador.
-
-```
-
-Copia todo este bloque de código exactamente como está, pégalo reemplazando todo el contenido de tu archivo `README.md` en VS Code, guárdalo y haz tu último *commit/push*. ¡Esa entrega va a quedar impecable a pesar de los contratiempos! 💪✨
-
-```
