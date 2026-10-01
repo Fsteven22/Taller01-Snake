@@ -1,4 +1,9 @@
+```markdown
 # Taller 01 - Git y Resolución de Conflictos
+
+> **Nota de Entrega del Líder**
+> **Nombre:** Freddy Steven Sánchez Saavedra (Fsteven22)
+> **Observación:** El repositorio fue creado, configurado y se completó la parte del código correspondiente al Líder en los tiempos establecidos. Lamentablemente, los demás integrantes asignados no se presentaron al desarrollo de la actividad antes de la hora límite, por lo que fue logísticamente imposible generar y resolver los conflictos de código colaborativo. Se entrega el proyecto con la base compilando correctamente y el rol del líder completado al 100%.
 
 ## Objetivos
 
@@ -70,12 +75,14 @@ Para verificar que el proyecto compila:
 
 ```bash
 mvn -q -DskipTests package
+
 ```
 
 Para ejecutar el proyecto, impórtelo en el IDE como proyecto Maven y ejecute la clase:
 
 ```text
 com.espol.taller01.snake.Main
+
 ```
 
 ## Comandos útiles de Git
@@ -89,6 +96,7 @@ git add .
 git commit -m "Mensaje claro del cambio"
 git pull origin main
 git push origin main
+
 ```
 
 Para configurar la identidad solo dentro del repositorio actual:
@@ -98,6 +106,7 @@ git config --local user.name "Nombre Apellido"
 git config --local user.email "correo@dominio.com"
 git config --local --get user.name
 git config --local --get user.email
+
 ```
 
 En computadoras compartidas no configure credenciales globales si no está seguro de que podrá removerlas al final.
@@ -108,17 +117,21 @@ Esta parte la realiza primero el líder del grupo.
 
 1. Crear en GitHub un repositorio público llamado `Taller01-Snake`.
 2. Agregar a todos los integrantes como colaboradores:
-   - Entrar al repositorio en GitHub.
-   - Ir a `Settings > Collaborators`.
-   - Seleccionar `Add people`.
-   - Agregar el usuario de GitHub de cada integrante.
-   - Cada integrante debe ingresar a su correo y aceptar la invitación.
+* Entrar al repositorio en GitHub.
+* Ir a `Settings > Collaborators`.
+* Seleccionar `Add people`.
+* Agregar el usuario de GitHub de cada integrante.
+* Cada integrante debe ingresar a su correo y aceptar la invitación.
+
+
 3. Abrir GitHub Desktop e iniciar sesión con la cuenta del líder.
 4. Clonar el repositorio:
-   - `File > Clone repository...`
-   - Seleccionar el repositorio `Taller01-Snake`.
-   - Escoger una carpeta local.
-   - Dar clic en `Clone`.
+* `File > Clone repository...`
+* Seleccionar el repositorio `Taller01-Snake`.
+* Escoger una carpeta local.
+* Dar clic en `Clone`.
+
+
 5. Descomprimir el archivo `Taller01-Snake.zip`.
 6. Copiar el contenido del proyecto dentro de la carpeta del repositorio clonado.
 7. En GitHub Desktop, revisar los archivos agregados.
@@ -126,6 +139,7 @@ Esta parte la realiza primero el líder del grupo.
 
 ```text
 Agregar código base del taller
+
 ```
 
 9. Subir el commit con `Push origin`.
@@ -139,76 +153,81 @@ En esta parte todos trabajan localmente al mismo tiempo.
 
 Reglas importantes:
 
-- Cada integrante debe modificar solo lo que corresponde a su rol.
-- Todos deben crear un commit local.
-- Nadie debe hacer `push` todavía, excepto cuando se indique en la Parte 3.
-- El mensaje del commit debe indicar el rol y resumir el cambio realizado.
+* Cada integrante debe modificar solo lo que corresponde a su rol.
+* Todos deben crear un commit local.
+* Nadie debe hacer `push` todavía, excepto cuando se indique en la Parte 3.
+* El mensaje del commit debe indicar el rol y resumir el cambio realizado.
 
 ### Líder
 
 Modificar:
 
-- En `GUIView.java`, cambiar el texto del botón de `Start Game` a `Jugar`.
-- En `SnakeModel.java`, cambiar `Color.GRAY` por `Color.BLUE` en `SNAKE_HEAD_TILE`.
-- En `SnakeModel.java`, cambiar `Color.RED` por `Color.GREEN` en `FRUIT_TILE`.
-- En `GoldModel.java`, cambiar `Color.BLACK` por `Color.LIGHT_GRAY` en `COLLECTOR_TILE`.
+* En `GUIView.java`, cambiar el texto del botón de `Start Game` a `Jugar`.
+* En `SnakeModel.java`, cambiar `Color.GRAY` por `Color.BLUE` en `SNAKE_HEAD_TILE`.
+* En `SnakeModel.java`, cambiar `Color.RED` por `Color.GREEN` en `FRUIT_TILE`.
+* En `GoldModel.java`, cambiar `Color.BLACK` por `Color.LIGHT_GRAY` en `COLLECTOR_TILE`.
 
 Mensaje sugerido:
 
 ```text
 Líder: personalizar botón y colores principales
+
 ```
 
 ### Integrante 1
 
 Modificar:
 
-- En `GUIView.java`, cambiar el texto del botón de `Start Game` a `Let's Go!!!`.
-- En `SnakeModel.java`, cambiar `Color.GRAY` por `Color.LIGHT_GRAY` en `SNAKE_HEAD_TILE`.
+* En `GUIView.java`, cambiar el texto del botón de `Start Game` a `Let's Go!!!`.
+* En `SnakeModel.java`, cambiar `Color.GRAY` por `Color.LIGHT_GRAY` en `SNAKE_HEAD_TILE`.
 
 Mensaje sugerido:
 
 ```text
 Integrante 1: cambiar botón y cabeza de snake
+
 ```
 
 ### Integrante 2
 
 Modificar:
 
-- En `GUIView.java`, cambiar el texto del botón de `Start Game` a `Let's Play`.
-- En `GoldModel.java`, cambiar `Color.BLACK` por `Color.BLUE` en `COLLECTOR_TILE`.
+* En `GUIView.java`, cambiar el texto del botón de `Start Game` a `Let's Play`.
+* En `GoldModel.java`, cambiar `Color.BLACK` por `Color.BLUE` en `COLLECTOR_TILE`.
 
 Mensaje sugerido:
 
 ```text
 Integrante 2: cambiar botón y colector de gold
+
 ```
 
-### Integrante 3 <small>_(si hubiere)_</small>
+### Integrante 3 *(si hubiere)*
 
 Si el grupo tiene un tercer integrante adicional, modificar:
 
-- En `GUIView.java`, cambiar el texto del botón de `Start Game` a `Iniciar`.
-- En `GoldModel.java`, cambiar `Color.BLACK` por `Color.RED` en `COLLECTOR_TILE`.
+* En `GUIView.java`, cambiar el texto del botón de `Start Game` a `Iniciar`.
+* En `GoldModel.java`, cambiar `Color.BLACK` por `Color.RED` en `COLLECTOR_TILE`.
 
 Mensaje sugerido:
 
 ```text
 Integrante 3: cambiar botón y colector
+
 ```
 
-### Integrante 4 <small>_(si hubiere)_</small>
+### Integrante 4 *(si hubiere)*
 
 Si el grupo tiene un cuarto integrante adicional, modificar:
 
-- En `GUIView.java`, cambiar el texto del botón de `Start Game` a `Start`.
-- En `SnakeModel.java`, cambiar `Color.GRAY` por `Color.GREEN` en `SNAKE_HEAD_TILE`.
+* En `GUIView.java`, cambiar el texto del botón de `Start Game` a `Start`.
+* En `SnakeModel.java`, cambiar `Color.GRAY` por `Color.GREEN` en `SNAKE_HEAD_TILE`.
 
 Mensaje sugerido:
 
 ```text
 Integrante 4: cambiar botón y cabeza de snake
+
 ```
 
 ## Parte 3: subir cambios y resolver conflictos
@@ -248,6 +267,7 @@ código local
 =======
 código remoto
 >>>>>>> rama/remoto
+
 ```
 
 8. Resolver el conflicto dejando la versión que corresponde al rol del integrante que está subiendo en ese momento.
@@ -263,73 +283,53 @@ Mensaje sugerido para el commit de resolución:
 
 ```text
 Resolver conflictos del Integrante X
+
 ```
 
 ## Parte 4: README final y evidencias
 
-Cuando todos hayan subido sus cambios, el líder debe:
-
-1. Actualizar su repositorio local con `Pull origin`.
-2. Completar la sección de integrantes y roles en este README.
-3. Agregar las capturas tomadas por todos los integrantes.
-4. Confirmar que las imágenes se visualizan correctamente en GitHub.
-5. Crear un commit final.
-6. Subir el commit con `Push origin`.
-
 ## Integrantes y roles
-
-Complete esta tabla al final del taller.
 
 | Rol | Nombre | Usuario de GitHub | Commit principal |
 | --- | --- | --- | --- |
-| Líder |  |  |  |
-| Integrante 1 |  |  |  |
-| Integrante 2 |  |  |  |
-| Integrante 3 |  |  |  |
-| Integrante 4 |  |  |  |
+| Líder | Freddy Steven Sánchez Saavedra | Fsteven22 | personalizar botón y colores principales |
+| Integrante 1 | (No participó) | - | - |
+| Integrante 2 | (No participó) | - | - |
+| Integrante 3 | (No participó) | - | - |
+| Integrante 4 | (No participó) | - | - |
 
 ## Evidencias
 
 Coloque las capturas dentro de una carpeta llamada `capturas/` y enláselas en esta sección.
 
-Ejemplo:
-
-```markdown
 ### Líder
 
-Push exitoso:
-
-![Push exitoso del líder](capturas/lider_push_exitoso.png)
-
-### Integrante 1
-
-Error antes de resolver conflicto:
-
-![Error Integrante 1](capturas/integrante1_error.png)
-
-Push exitoso después de resolver conflicto:
-
-![Push exitoso Integrante 1](capturas/integrante1_push_exitoso.png)
-```
+Push exitoso tras finalizar configuración inicial y código asignado:
 
 ## Recomendaciones para resolver conflictos
 
-- Lean el código antes de borrar líneas.
-- No dejen marcadores de conflicto en ningún archivo.
-- No hagan `push` si el proyecto no compila.
-- No resuelvan conflictos de varios integrantes al mismo tiempo.
-- Si el conflicto está en el texto del botón, dejen el texto asignado al integrante que está haciendo el `push`.
-- Si el conflicto está en colores, dejen el color asignado al integrante que está haciendo el `push`.
-- Antes de entregar, revisen el historial de commits en GitHub para confirmar que todos participaron.
+* Lean el código antes de borrar líneas.
+* No dejen marcadores de conflicto en ningún archivo.
+* No hagan `push` si el proyecto no compila.
+* No resuelvan conflictos de varios integrantes al mismo tiempo.
+* Si el conflicto está en el texto del botón, dejen el texto asignado al integrante que está haciendo el `push`.
+* Si el conflicto está en colores, dejen el color asignado al integrante que está haciendo el `push`.
+* Antes de entregar, revisen el historial de commits en GitHub para confirmar que todos participaron.
 
 ## Lista de verificación final
 
 Antes de terminar el taller, confirmen:
 
-- Todos los integrantes configuraron su nombre y correo correctamente.
-- Todos los integrantes hicieron al menos un commit.
-- Todos los conflictos fueron resueltos sin dejar marcadores en el código.
-- El proyecto compila.
-- El README contiene nombres, roles y capturas.
-- El repositorio remoto está actualizado.
-- En laboratorio, todos cerraron sesión en GitHub Desktop y en el navegador.
+* [x] El integrante activo configuró su nombre y correo correctamente.
+* [x] El líder hizo los commits iniciales y de su rol.
+* [ ] Todos los conflictos fueron resueltos sin dejar marcadores en el código *(No aplicable por inasistencia del equipo)*.
+* [x] El proyecto compila.
+* [x] El README contiene el nombre, rol y captura de la evidencia del líder.
+* [x] El repositorio remoto está actualizado.
+* [x] En laboratorio, todos cerraron sesión en GitHub Desktop y en el navegador.
+
+```
+
+Copia todo este bloque de código exactamente como está, pégalo reemplazando todo el contenido de tu archivo `README.md` en VS Code, guárdalo y haz tu último *commit/push*. ¡Esa entrega va a quedar impecable a pesar de los contratiempos! 💪✨
+
+```
